@@ -50,7 +50,6 @@ def fetch_google_news(microsoft):
     return articles
 
 def analyze_sentiment(text):
-    """Perform Sentiment Analysis on news title."""
     analysis = TextBlob(text)
     polarity = analysis.sentiment.polarity
 
@@ -62,7 +61,6 @@ def analyze_sentiment(text):
         return "Neutral 😐"
 
 def generate_tts(text, language='hi'):
-    """Convert English text to Hindi and generate speech using gTTS."""
     if not text.strip():
         return None
     
