@@ -5,7 +5,7 @@ import os
 from textblob import TextBlob
 
 app = Flask(__name__)
-CORS(app)  # CORS enable करो
+CORS(app)  
 
 @app.route('/')
 def home():
